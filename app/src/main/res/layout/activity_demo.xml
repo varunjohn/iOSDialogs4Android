@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DemoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="showDialog"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:lineSpacingExtra="6dp"
+                android:onClick="type1"
+                android:padding="16dp"
+                android:text="Dialog with\nMessage"
+                android:textAllCaps="false"
+                android:textSize="16sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:lineSpacingExtra="6dp"
+                android:onClick="type2"
+                android:padding="16dp"
+                android:text="Dialog with\n(Title + Message)"
+                android:textAllCaps="false"
+                android:textSize="16sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:lineSpacingExtra="6dp"
+                android:onClick="type3"
+                android:padding="16dp"
+                android:text="Dialog with\n(Title + Message + 2 options)"
+                android:textAllCaps="false"
+                android:textSize="16sp" />
+
+            <!--<ImageView-->
+            <!--android:id="@+id/imageView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="240dp"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:src="@drawable/google" />-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="8dp"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="8dp"-->
+            <!--android:text="Google"-->
+            <!--android:textSize="20sp"-->
+            <!--android:textStyle="bold" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/textView2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="8dp"-->
+            <!--android:text="@string/google_info"-->
+            <!--android:textSize="14sp" />-->
+            <!--</LinearLayout>-->
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

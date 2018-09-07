@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.varunjohn1990.iosdialogs4android">
+
+    <application>
+        <activity
+            android:name=".IOSDialogActivity"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppThemeIosDialog"></activity>
+    </application>
+
+</manifest>

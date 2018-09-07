@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_medium_letter_spacing">0.01</dimen>
+    <dimen name="line_spacing_extra_title">2sp</dimen>
+</resources>

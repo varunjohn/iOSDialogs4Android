@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="text_shadow">#1A000000</color>
+    <color name="layer_ios_dialog">#80000000</color>
+
+    <color name="title_ios_dialog">#000000</color>
+    <color name="message_ios_dialog">#020202</color>
+    <!--<color name="action_button_ios_dialog">#E64591f0</color>-->
+    <color name="action_button_ios_dialog">#1981fb</color>
+
+    <color name="separator_ios_dialog">#1A000000</color>
+    <color name="highlight_ios_dialog">#0F000000</color>
+
+</resources>

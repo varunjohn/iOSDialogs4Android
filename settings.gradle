@@ -1,0 +1,1 @@
+include ':app', ':iosdialogs4android'
