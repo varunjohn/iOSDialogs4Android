@@ -19,6 +19,16 @@ implementation 'com.varunjohn1990.libraries:iosdialogs4android:1.0.1'
 
 Just use this friendly builder pattern to show the Dialog. 
 
+### For simple message
+```
+  new IOSDialog.Builder(this)
+                .message(R.string.dialog_message)
+                .build()
+                .show();
+```
+
+### All available options
+
 ```
   new IOSDialog.Builder(context)
                 .title("iOS Dialogs")              // String or String Resource ID
