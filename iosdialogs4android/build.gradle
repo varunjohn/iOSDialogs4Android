@@ -2,18 +2,18 @@ apply plugin: 'com.android.library'
 
 ext {
     bintrayRepo = 'Maven'
-    bintrayName = 'iOSDialogs4Android'
+    bintrayName = 'iosdialogs4android'
 
     publishedGroupId = 'com.varunjohn1990.libraries'
-    libraryName = 'iOSDialogs4Android'
-    artifact = 'iOSDialogs4Android'
+    libraryName = 'iosdialogs4android'
+    artifact = 'iosdialogs4android'
 
     libraryDescription = 'Its a library to show iOS like AlertView in Android as Dialogs. Check demo here https://github.com/varunjohn/iOSDialogs4Android'
 
     siteUrl = 'https://github.com/varunjohn/iOSDialogs4Android'
     gitUrl = 'https://github.com/varunjohn/iOSDialogs4Android.git'
 
-    libraryVersion = '1.0.2'
+    libraryVersion = '1.0.1'
 
     developerId = 'varunjohn1990'
     developerName = 'Varun John'

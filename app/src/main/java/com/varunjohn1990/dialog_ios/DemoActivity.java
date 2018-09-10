@@ -53,36 +53,17 @@ public class DemoActivity extends AppCompatActivity {
     }
 
     public void type1(View view) {
-        new IOSDialog.Builder(context)
-                .message(R.string.dialog_message)  // String or String Resource ID
-                .positiveButtonText("Ok")  // String or String Resource ID
-                .cancelable(true)                  // Dialog will dismiss if clicked outside
-                .enableAnimation(true)             // To enable enter and exit animations
-                .positiveClickListener(new IOSDialog.Listener() {
-                    @Override
-                    public void onClick(IOSDialog iosDialog) {
-                        iosDialog.dismiss();
-                        Toast.makeText(context, "Thanks :)", Toast.LENGTH_SHORT).show();
-                    }
-                })
+        new IOSDialog.Builder(this)
+                .message(R.string.dialog_message)
                 .build()
                 .show();
     }
 
     public void type2(View view) {
         new IOSDialog.Builder(context)
-                .title("iOS Dialogs")              // String or String Resource ID
-                .message(R.string.dialog_message)  // String or String Resource ID
-                .positiveButtonText("Ok")  // String or String Resource ID
-                .cancelable(true)                  // Dialog will dismiss if clicked outside
-                .enableAnimation(true)             // To enable enter and exit animations
-                .positiveClickListener(new IOSDialog.Listener() {
-                    @Override
-                    public void onClick(IOSDialog iosDialog) {
-                        iosDialog.dismiss();
-                        Toast.makeText(context, "Thanks :)", Toast.LENGTH_SHORT).show();
-                    }
-                })
+                .title("iOS Dialogs")
+                .message(R.string.dialog_message)
+                .cancelable(false)
                 .build()
                 .show();
     }

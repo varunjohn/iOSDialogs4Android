@@ -18,7 +18,7 @@ import android.widget.TextView;
 /**
  * Created by Varun John on August 2018.
  */
-public class IOSDialogActivity extends AppCompatActivity implements View.OnClickListener {
+class IOSDialogActivity extends AppCompatActivity implements View.OnClickListener {
 
     public static void openActivity(Context context, IOSDialog iosDialog) {
         IOSDialogActivity.iosDialog = iosDialog;
@@ -76,7 +76,7 @@ public class IOSDialogActivity extends AppCompatActivity implements View.OnClick
         if (iosDialog.getPositiveButtonText() != null) {
             textViewPositive.setText(iosDialog.getPositiveButtonText());
         } else {
-            textViewPositive.setText("");
+            textViewPositive.setText("Ok");
         }
 
         if (iosDialog.getNegativeButtonText() != null) {
@@ -141,10 +141,15 @@ public class IOSDialogActivity extends AppCompatActivity implements View.OnClick
         if (id == R.id.textViewPositive) {
             if (iosDialog.getPositiveClickListener() != null) {
                 iosDialog.getPositiveClickListener().onClick(iosDialog);
+            } else {
+                dismiss();
             }
+
         } else if (id == R.id.textViewNegative) {
             if (iosDialog.getNegativeClickListener() != null) {
                 iosDialog.getNegativeClickListener().onClick(iosDialog);
+            } else {
+                dismiss();
             }
         } else {
         }
