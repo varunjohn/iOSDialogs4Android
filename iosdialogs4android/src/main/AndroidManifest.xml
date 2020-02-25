@@ -3,8 +3,8 @@
 
     <application>
         <activity
-            android:name=".IOSDialogActivity"
-            android:launchMode="singleInstance"
+            android:name=".IOSDialogView"
+            android:launchMode="singleTop"
             android:theme="@style/AppThemeIosDialog"></activity>
     </application>
 

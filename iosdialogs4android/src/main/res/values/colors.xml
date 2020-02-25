@@ -9,8 +9,9 @@
 
     <color name="title_ios_dialog">#000000</color>
     <color name="message_ios_dialog">#020202</color>
-    <!--<color name="action_button_ios_dialog">#E64591f0</color>-->
+
     <color name="action_button_ios_dialog">#1981fb</color>
+    <color name="action_button_negative_ios_dialog">#FA3826</color>
 
     <color name="separator_ios_dialog">#1A000000</color>
     <color name="highlight_ios_dialog">#0F000000</color>

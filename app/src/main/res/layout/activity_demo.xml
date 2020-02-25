@@ -13,7 +13,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="40dp"
+            android:layout_margin="28dp"
             android:clickable="true"
             android:focusable="true"
             android:onClick="showDialog"
@@ -52,35 +52,16 @@
                 android:textAllCaps="false"
                 android:textSize="16sp" />
 
-            <!--<ImageView-->
-            <!--android:id="@+id/imageView"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="240dp"-->
-            <!--android:scaleType="centerCrop"-->
-            <!--android:src="@drawable/google" />-->
-
-            <!--<LinearLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_margin="8dp"-->
-            <!--android:orientation="vertical">-->
-
-            <!--<TextView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_margin="8dp"-->
-            <!--android:text="Google"-->
-            <!--android:textSize="20sp"-->
-            <!--android:textStyle="bold" />-->
-
-            <!--<TextView-->
-            <!--android:id="@+id/textView2"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_margin="8dp"-->
-            <!--android:text="@string/google_info"-->
-            <!--android:textSize="14sp" />-->
-            <!--</LinearLayout>-->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:lineSpacingExtra="6dp"
+                android:onClick="type4"
+                android:padding="16dp"
+                android:text="Dialog with\n(Title + Message + Multiple options)"
+                android:textAllCaps="false"
+                android:textSize="16sp" />
         </LinearLayout>
     </ScrollView>
 </android.support.constraint.ConstraintLayout>
