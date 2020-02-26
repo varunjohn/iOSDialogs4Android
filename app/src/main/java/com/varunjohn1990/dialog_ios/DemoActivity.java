@@ -1,10 +1,11 @@
 package com.varunjohn1990.dialog_ios;
 
 import android.content.Context;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.varunjohn1990.iosdialogs4android.IOSDialog;
 import com.varunjohn1990.iosdialogs4android.IOSDialogButton;
@@ -123,6 +124,11 @@ public class DemoActivity extends AppCompatActivity {
                                 Toast.makeText(context, "Add new user", Toast.LENGTH_SHORT).show();
                             case 2:
                                 Toast.makeText(context, "Check user status", Toast.LENGTH_SHORT).show();
+                                break;
+                            case 3:
+                                Toast.makeText(context, "Logout all user", Toast.LENGTH_SHORT).show();
+                            case 4:
+                                Toast.makeText(context, "Remove user by id", Toast.LENGTH_SHORT).show();
                                 break;
                         }
                     }

@@ -4,23 +4,21 @@ import android.animation.Animator;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Typeface;
-import android.os.Build;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.Layout;
-import android.text.method.ScrollingMovementMethod;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+
 /**
  * Created by Varun John on August 2018.
+ * Github : https://github.com/varunjohn
  */
 public class IOSDialogView extends AppCompatActivity implements View.OnClickListener {
 

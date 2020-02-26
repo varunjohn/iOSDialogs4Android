@@ -8,6 +8,7 @@ import java.util.List;
 
 /**
  * Created by Varun John on August 2018.
+ * Github : https://github.com/varunjohn
  */
 public class IOSDialog {
 

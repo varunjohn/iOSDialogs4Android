@@ -4,6 +4,10 @@ import android.graphics.Color;
 
 import java.io.Serializable;
 
+/**
+ * Created by Varun John on Feb 2020.
+ * Github : https://github.com/varunjohn
+ */
 public class IOSDialogButton implements Serializable {
 
     public static final int TYPE_POSITIVE = 1;
