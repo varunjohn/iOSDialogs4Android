@@ -1,28 +1,84 @@
 # iOSDialogs4Android
 Its a library to show iOS like AlertView in Android as Dialogs with similar animations.
 
-![iosdialogs4android sample](https://user-images.githubusercontent.com/24667361/45210567-9abd8c80-b2ad-11e8-8e49-f35eb09d9e3b.gif)
+![ezgif-2-83e6a67994e5](https://user-images.githubusercontent.com/24667361/75472665-d96f6700-59b9-11ea-886a-809d4fe92249.gif)
 
 ## Gradle dependency
 
-Add this dependency in your app level build.gradle file
-
 [ ![Download](https://api.bintray.com/packages/varunjohn1990/Maven/iosdialogs4android/images/download.svg) ](https://bintray.com/varunjohn1990/Maven/iosdialogs4android/_latestVersion)
 
-```
-implementation 'com.varunjohn1990.libraries:iosdialogs4android:1.0.2'
-```
+Add this dependency in your app level build.gradle file
 
-
+```
+implementation 'com.varunjohn1990.libraries:iosdialogs4android:2.0.0'
+```
 
 ## How to use
 
-Just use this friendly builder pattern to show the Dialog. 
+Just use this friendly builder pattern to show the Dialog.
 
 ### For simple message
 ```
   new IOSDialog.Builder(this)
-                .message(R.string.dialog_message)
+                .message(R.string.dialog_message) // String or String Resource ID
+                .build()
+                .show();
+```
+
+### For 2 options
+
+```
+  new IOSDialog.Builder(context)
+                .title("iOS Dialogs")              // String or String Resource ID
+                .message(R.string.dialog_message)  // String or String Resource ID
+                .positiveButtonText("Yeah, sure")  // String or String Resource ID
+                .negativeButtonText("No Thanks")   // String or String Resource ID
+                .positiveClickListener(new IOSDialog.Listener() {
+                    @Override
+                    public void onClick(IOSDialog iosDialog) {
+                        iosDialog.dismiss();
+                        Toast.makeText(context, "Thanks :)", Toast.LENGTH_SHORT).show();
+                    }
+                }).negativeClickListener(new IOSDialog.Listener() {
+                    @Override
+                    public void onClick(IOSDialog iosDialog) {
+                        iosDialog.dismiss();
+                        Toast.makeText(context, ":(", Toast.LENGTH_SHORT).show();
+                    }
+                })
+                .build()
+                .show();
+```
+
+### For multiple options
+
+```
+List<IOSDialogButton> iosDialogButtons = new ArrayList<>();
+iosDialogButtons.add(new IOSDialogButton(1, "Add new user", true, IOSDialogButton.TYPE_POSITIVE));
+iosDialogButtons.add(new IOSDialogButton(2, "Check user status"));
+iosDialogButtons.add(new IOSDialogButton(3, "Logout all user", false, IOSDialogButton.TYPE_NEGATIVE));
+
+new IOSDialog.Builder(this)
+                .title("iOS Dialogs")              // String or String Resource ID
+                .message(R.string.dialog_message)  // String or String Resource ID
+                .multiOptions(true)                // Set this true other it will not work
+                .multiOptionsListeners(new IOSDialogMultiOptionsListeners() {
+                    @Override
+                    public void onClick(IOSDialog iosDialog, IOSDialogButton iosDialogButton) {
+                        iosDialog.dismiss();
+
+                        switch (iosDialogButton.getId()) {
+                            case 1:
+                                Toast.makeText(context, "Add new user", Toast.LENGTH_SHORT).show();
+                            case 2:
+                                Toast.makeText(context, "Check user status", Toast.LENGTH_SHORT).show();
+                                break;
+                            case 3:
+                                Toast.makeText(context, "Logout all user", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                })
+                .iosDialogButtonList(iosDialogButtons)
                 .build()
                 .show();
 ```
