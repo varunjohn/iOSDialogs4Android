@@ -10,7 +10,7 @@ Its a library to show iOS like AlertView in Android as Dialogs with similar anim
 Add this dependency in your app level build.gradle file
 
 ```
-implementation 'com.varunjohn1990.libraries:iosdialogs4android:2.0.0'
+implementation 'com.varunjohn1990.libraries:iosdialogs4android:2.0.1'
 ```
 
 ## How to use
